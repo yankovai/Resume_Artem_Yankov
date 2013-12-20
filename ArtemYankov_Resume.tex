@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Artem I. Yankov} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+
+\moveleft.5\hoffset\centerline{yankovai@umich.edu}
+\moveleft.5\hoffset\centerline{\textbf{URL}: https://sites.google.com/a/umich.edu/yankovai/}
+\moveleft.5\hoffset\centerline{\textbf{GitHub}: https://github.com/yankovai}
+\moveleft.5\hoffset\centerline{(401) 206-9133}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{TECHNICAL SKILLS} 
+
+{\sl Languages:} Python, R, Fortran, bash, SQLite, Matlab, \LaTeX, Apache Pig \\
+{\sl Operating Systems:} OS X, Unix, Windows \\
+{\sl Applications and Libraries:} Numpy, SciPy, Pandas, BeautifulSoup, ggplot2, Git, SciKit-Learn, Twitter Streaming API, Tableau, Dakota, Maple  \\
+{\sl Other Skills:} Web scraping, linear/logistic regression, support vector machines, uncertainty quantification, numerical linear algebra, reduced order modeling
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}
+
+{\sl Data Scientist} \hfill July 2010-present \\
+University of Michigan, Ann Arbor, MI
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item StackOverflow Query Tag Extraction
+\begin{itemize}
+\item Used Python to analyze over 6,000,000 StackOverflow queries and corresponding tags using MapReduce-type framework.  
+\item Reformulated raw textual data to a useful form and placed into SQL database for further processing.
+\item Developed an algorithm to automatically predict new tags based on similarity to queries in training data set. 
+\end{itemize}
+\item College Basketball Prediction
+\begin{itemize}
+\item Scraped a decade’s worth of college basketball data from sports-reference.com/cbb using BeautifulSoup and stored results in SQLite database.  
+\item Analyzed data and developed a logistic regression model to predict the outcome of unplayed games. 
+\item Ranked all college basketball teams based on simulations of predictive model. 
+\item Created a visualization of predictive model performance using Tableau.
+\end{itemize}
+\item Twitter User Cravings
+\begin{itemize}
+\item Used Twitter Streaming API to investigate cravings of Twitter users. 
+\item Utilized Apache Pig to filter and process relevant data. 
+\item Created a visualization application using Tableau to present results. 
+\end{itemize}
+\end{itemize}
+
+{\sl Graduate Student Research Assistant} \hfill July 2010-present \\
+University of Michigan, Department of Nuclear Engineering, Ann Arbor, MI
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Working with Idaho National Laboratory and Sandia National Laboratory to fold high fidelity computer simulations and experimental data for the creation of optimized nuclear fuel performance models. 
+\item Research in how uncertainties in reactor simulation code input parameters propagate to output predictions made by the code.
+\begin{itemize}
+\item Extensive collaboration with researchers at Oak Ridge National Laboratory.
+\item Results of research published in leading journal and awarded first prize at a major technical conference.
+\end{itemize}
+\item Implemented numerical linear algebra routines into primary software used by Nuclear Regulatory Commission to simulate nuclear reactor accident scenarios.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+\textbf{University of Michigan} \hfill Ann Arbor, MI \\
+{\sl Ph.D} Nuclear Engineering and Radiological Sciences \hfill Expected 2014
+
+\textbf{Rose-Hulman Institute of Technology} \hfill Terre Haute, IN \\
+{\sl B.S.} Mathematics \hfill May, 2010 \\
+{\sl B.S.} Physics \\
+Minor: Computational Science \\
+Clarence P. Sousley Award for demonstration of exceptional performance in the mathematical sciences.
+  
+\end{resume}
+\end{document}
