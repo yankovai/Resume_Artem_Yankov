@@ -37,10 +37,13 @@
  
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 
-\moveleft.5\hoffset\centerline{yankovai@umich.edu}
-\moveleft.5\hoffset\centerline{\textbf{URL}: https://sites.google.com/a/umich.edu/yankovai/}
-\moveleft.5\hoffset\centerline{\textbf{GitHub}: https://github.com/yankovai}
-\moveleft.5\hoffset\centerline{(401) 206-9133}
+%\moveleft.5\hoffset\centerline{yankovai@umich.edu}
+%\moveleft.5\hoffset\centerline{\textbf{LinkedIn}: https://www.linkedin.com/in/artemyankov}
+%\moveleft.5\hoffset\centerline{\textbf{GitHub}: https://github.com/yankovai}
+\moveleft.5\hoffset\centerline{\textbf{Phone}: (401) 206-9133}
+\moveleft.5\hoffset\centerline{\textbf{Email}: yankovai@umich.edu}
+\moveleft.5\hoffset\centerline{\textbf{Address}: 4502 42nd Ave SW, Apt 606, Seattle WA 98116}
+\moveleft.5\hoffset\centerline{\textbf{Personal Website}: www.1oclockbuzz.com}
 
 %----------------------------------------------------------------------------------------
 
@@ -52,10 +55,10 @@
 
 \section{TECHNICAL SKILLS} 
 
-{\sl Languages:} Python, R, Fortran, bash, SQLite, Matlab, \LaTeX, Apache Pig \\
+{\sl Languages:} Python, SQL, R, bash, Fortran, \LaTeX \\
 {\sl Operating Systems:} OS X, Unix, Windows \\
-{\sl Applications and Libraries:} Numpy, SciPy, Pandas, BeautifulSoup, ggplot2, Git, SciKit-Learn, Twitter Streaming API, Tableau, Dakota, Maple  \\
-{\sl Other Skills:} Web scraping, linear/logistic regression, support vector machines, uncertainty quantification, numerical linear algebra, reduced order modeling
+{\sl Applications \& Libraries:} Tableau, AWS, Spark, SciKit-Learn, Pandas, git  \\
+{\sl Other Skills:} Machine learning, data mining, uncertainty quantification, numerical linear algebra
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
@@ -63,7 +66,24 @@
  
 \section{EXPERIENCE}
 
-{\sl Data Scientist Intern} \hfill May 2014-present \\
+{\sl Data Scientist} \hfill July 2015 - Present\\
+Rover.com, Seattle, WA
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Improved matching between dog sitters and owners in the core search rank algorithm by implementing Bayesian updating rules.
+\end{itemize}
+
+{\sl Data Scientist} \hfill August 2014 - July 2015\\
+Zillow, Seattle, WA
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Used network graph algorithms and AWS framework to build a zip code recommendation engine for advertisers.  
+\item Implemented models to predict customer churn. Developed weekly churn visualizations in Tableau utilized by company CEO to guide pricing decisions. 
+\item Used linear programming algorithms to match consumers with mortgage lenders given various geospatial restrictions.
+\item Devised metrics and constructed statistical models to analyze the performance of business-to-business marketing efforts.  
+\end{itemize}
+
+{\sl Data Scientist Intern} \hfill May 2014 - August 2014 \\
 Globys, Seattle, WA
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
@@ -71,7 +91,7 @@ Globys, Seattle, WA
 \item Researched and developed algorithms for predicting customer churn, including Bayesian Bandits and Hidden Markov Models. 
 \end{itemize}
 
-{\sl Graduate Student Research Assistant} \hfill July 2010-present \\
+{\sl Graduate Student Research Assistant} \hfill July 2010 - December 2014 \\
 University of Michigan, Department of Nuclear Engineering, Ann Arbor, MI
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
@@ -91,32 +111,32 @@ University of Michigan, Department of Nuclear Engineering, Ann Arbor, MI
 %	DATA SCIENCE PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{PERSONAL \\ PROJECTS}
-
-{\sl StackOverflow Query Tag Extraction} 
-
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Used Python to analyze over 6,000,000 StackOverflow queries and corresponding tags using MapReduce-type framework.  
-\item Reformulated raw textual data to a useful form and placed into SQL database for further processing.
-\item Developed an algorithm to automatically predict new tags based on similarity to queries in training data set with over 80\% accuracy.
-\end{itemize}
-
-{\sl NCAA College Basketball Prediction} 
-
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Scraped a decade's worth of college basketball data from sports-reference.com/cbb using BeautifulSoup and stored results in SQLite database.  
-\item Analyzed data and developed a logistic regression model to predict the outcome of unplayed games with some 14\% lift. 
-\item Ranked all college basketball teams based on simulations of predictive model. 
-\item Created a visualization of predictive model performance using Tableau.
-\end{itemize}
-
-{\sl Twitter User Cravings}
-
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Used Twitter Streaming API to investigate cravings of Twitter users. 
-\item Utilized Apache Pig to filter and process relevant data. 
-\item Created a visualization application using Tableau to present results. 
-\end{itemize}
+%\section{PERSONAL \\ PROJECTS}
+%
+%{\sl StackOverflow Query Tag Extraction} 
+%
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item Used Python to analyze over 6,000,000 StackOverflow queries and corresponding tags using MapReduce-type framework.  
+%\item Reformulated raw textual data to a useful form and placed into SQL database for further processing.
+%\item Developed an algorithm to automatically predict new tags based on similarity to queries in training data set with over 80\% accuracy.
+%\end{itemize}
+%
+%{\sl NCAA College Basketball Prediction} 
+%
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item Scraped a decade's worth of college basketball data from sports-reference.com/cbb using BeautifulSoup and stored results in SQLite database.  
+%\item Analyzed data and developed a logistic regression model to predict the outcome of unplayed games with some 14\% lift. 
+%\item Ranked all college basketball teams based on simulations of predictive model. 
+%\item Created a visualization of predictive model performance using Tableau.
+%\end{itemize}
+%
+%{\sl Twitter User Cravings}
+%
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item Used Twitter Streaming API to investigate cravings of Twitter users. 
+%\item Utilized Apache Pig to filter and process relevant data. 
+%\item Created a visualization application using Tableau to present results. 
+%\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -125,10 +145,13 @@ University of Michigan, Department of Nuclear Engineering, Ann Arbor, MI
 \section{EDUCATION}
 
 \textbf{University of Michigan} \hfill Ann Arbor, MI \\
-{\sl Ph.D} Nuclear Engineering and Radiological Sciences \hfill Expected 2014
+{\sl Ph.D} Nuclear Engineering and Radiological Sciences \hfill December 2014
+
+%\textbf{University of Michigan} \hfill Ann Arbor, MI \\
+%{\sl M.S.E.} Nuclear Engineering and Radiological Sciences \hfill January, 2014
 
 \textbf{Rose-Hulman Institute of Technology} \hfill Terre Haute, IN \\
-{\sl B.S.} Mathematics \hfill May, 2010 \\
+{\sl B.S.} Mathematics \hfill May 2010 \\
 {\sl B.S.} Physics \\
 Minor: Computational Science \\
 Clarence P. Sousley Award for demonstration of exceptional performance in the mathematical sciences.
